@@ -9,7 +9,15 @@ h1 {
   font-style: normal; }
 
 .main {
-  margin: 0 auto; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .container {
   display: -webkit-box;
@@ -22,8 +30,9 @@ h1 {
 .card {
   text-align: center;
   position: relative;
-  width: 220px;
-  height: 251px;
+  width: 200px;
+  height: 231px;
+  padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 10px;
