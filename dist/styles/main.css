@@ -30,6 +30,7 @@ h1 {
 .card {
   text-align: center;
   position: relative;
+  padding: 10px;
   width: 220px;
   height: 251px;
   -webkit-box-sizing: border-box;
