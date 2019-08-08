@@ -66,7 +66,8 @@
 
 .card__picture:hover {
   animation-name: bigger--picture;
-  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
   animation-delay: 1s;
 }
 
@@ -76,13 +77,28 @@
   margin-bottom: -40px;
   position: relative;
   z-index: 1;
+  //transition-delay: 1s;
+  //transform: scale(1.2, 1.2);
+  animation-fill-mode: forwards;
   animation-name: bigger;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-delay: 1s;
 }
 
 .card:hover .card__sport-money {
   display: block;
+}
+
+@keyframes bigger {
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+@keyframes bigger--picture {
+  100% {
+    border-radius: 60px;
+  }
 }
 
 @media (min-width: 500px) {
@@ -94,19 +110,5 @@
 @media (min-width: 1000px) {
   .container {
     width: 920px;
-  }
-}
-
-@keyframes bigger {
-  /* You could think of as "step 1" */
-  100% {
-    transform: scale(1.2, 1.2);
-  }
-}
-
-@keyframes bigger--picture {
-  /* You could think of as "step 1" */
-  100% {
-    border-radius: 60px;
   }
 }
