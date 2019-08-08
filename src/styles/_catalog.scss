@@ -1,13 +1,13 @@
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   font-family: Arial, sans-serif;
+  justify-content: flex-start;
 }
 
 .card {
@@ -58,4 +58,16 @@
 
 .card:hover {
   background: #eee;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 460px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 920px;
+  }
 }
