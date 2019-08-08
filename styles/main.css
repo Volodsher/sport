@@ -77,8 +77,21 @@ h1 {
   text-align: center;
   margin-top: 8px; }
 
+.card__sport-money {
+  display: none;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 9px; }
+
 .card:hover {
-  background: #eee; }
+  background: #eee;
+  height: 287px;
+  margin-bottom: -40px;
+  position: relative;
+  z-index: 1; }
+
+.card:hover .card__sport-money {
+  display: block; }
 
 @media (min-width: 500px) {
   .container {
