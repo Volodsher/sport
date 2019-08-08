@@ -1,5 +1,7 @@
 .main {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -11,8 +13,9 @@
 .card {
   text-align: center;
   position: relative;
-  width: 220px;
-  height: 251px;
+  width: 200px;
+  height: 231px;
+  padding: 10px;
   box-sizing: border-box;
   margin: 10px;
   border-radius: 10px;
