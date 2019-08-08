@@ -86,8 +86,10 @@ h1 {
 .card__picture:hover {
   -webkit-animation-name: bigger--picture;
           animation-name: bigger--picture;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-delay: 1s;
           animation-delay: 1s; }
 
@@ -97,15 +99,35 @@ h1 {
   margin-bottom: -40px;
   position: relative;
   z-index: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-animation-name: bigger;
           animation-name: bigger;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-delay: 1s;
           animation-delay: 1s; }
 
 .card:hover .card__sport-money {
   display: block; }
+
+@-webkit-keyframes bigger {
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2); } }
+
+@keyframes bigger {
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2); } }
+
+@-webkit-keyframes bigger--picture {
+  100% {
+    border-radius: 60px; } }
+
+@keyframes bigger--picture {
+  100% {
+    border-radius: 60px; } }
 
 @media (min-width: 500px) {
   .container {
@@ -114,28 +136,6 @@ h1 {
 @media (min-width: 1000px) {
   .container {
     width: 920px; } }
-
-@-webkit-keyframes bigger {
-  /* You could think of as "step 1" */
-  100% {
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2); } }
-
-@keyframes bigger {
-  /* You could think of as "step 1" */
-  100% {
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2); } }
-
-@-webkit-keyframes bigger--picture {
-  /* You could think of as "step 1" */
-  100% {
-    border-radius: 60px; } }
-
-@keyframes bigger--picture {
-  /* You could think of as "step 1" */
-  100% {
-    border-radius: 60px; } }
 
 body {
   background: #fff; }
