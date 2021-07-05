@@ -1,0 +1,114 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  justify-content: flex-start;
+}
+
+.card {
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  width: 220px;
+  height: 251px;
+  box-sizing: border-box;
+  margin: 10px 5px;
+  border-radius: 10px;
+}
+
+.card__number {
+  display: flex;
+  position: absolute;
+  margin: 84px 10px 115px 158px;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 18px;
+  color: #8b0000;
+}
+
+.card__photo {
+  width: 200px;
+  height: 200px;
+}
+
+.card__picture {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 23px;
+  color: #2f4f4f;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.card__sport-money {
+  display: none;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 9px;
+}
+
+.card__picture:hover {
+  animation-name: bigger--picture;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.card:hover {
+  background: #eee;
+  height: 287px;
+  margin-bottom: -40px;
+  position: relative;
+  z-index: 1;
+  //transition-delay: 1s;
+  //transform: scale(1.2, 1.2);
+  animation-fill-mode: forwards;
+  animation-name: bigger;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.card:hover .card__sport-money {
+  display: block;
+}
+
+@keyframes bigger {
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+@keyframes bigger--picture {
+  100% {
+    border-radius: 60px;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 460px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 920px;
+  }
+}
